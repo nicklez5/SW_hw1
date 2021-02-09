@@ -7,10 +7,7 @@
 </head>
 <body>
     {% for product in products %}
-        <image src="{% if product.question_image %}
-                        {{ product.question_image.url }}
-                    {% endif %}">
-        </image>
+
         {{ product.title }}<br>
         {{ product.created_date }}<br>
     Edit <br><br><br>
